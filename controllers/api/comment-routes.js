@@ -1,10 +1,6 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
 
-router.get('/', (req, res) => {
-
-});
-
 // Create comment
 router.post('/', (req, res) => {
     Comment.create({
@@ -22,12 +18,12 @@ router.post('/', (req, res) => {
 // find all comments
 router.get('/', (req, res) => {
     Comment.findAll()
-    .then(dbCommentData => res.json(dbCommentData))
-    .catch(err => {
+      .then(dbCommentData => res.json(dbCommentData))
+      .catch(err => {
         console.log(err);
         res.status(500).json(err);
-    });
-});
+      });
+  });
 
 // find a single comment
 router.get('/:id', (req, res) => {
