@@ -13,10 +13,9 @@
         <header>
             <nav>
                 <a href="/">Home</a>
-                <a href="/">Dashboard</a>
-
                 {{!-- conditionally render login logout buttons --}}
                 {{#if loggedIn}}
+                <a href="/">Dashboard</a>
                 <button id="logout" class="btn-no-style">Logout</button>
                 {{else}}
                 <a href="/login">Login</a>

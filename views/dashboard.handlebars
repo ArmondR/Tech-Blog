@@ -1,0 +1,18 @@
+{{#if posts.length}}
+<section>
+    <h2>Your Posts</h2>
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit</a>
+        </li>
+        {{/each}}
+    </ol>
+    <div>
+        <button id="add-post" class="new-post">+ New Post</button>
+    </div>
+</section>
+{{/if}}
+
+<script src='/javascript/add-post.js'></script>
