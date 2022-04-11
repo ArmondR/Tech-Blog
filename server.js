@@ -32,12 +32,13 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-// session initiation
-app.use(session(sess));
 
 // handlebars
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
+// session initiation
+app.use(session(sess));
 
 // turn on routes
 app.use(routes);
