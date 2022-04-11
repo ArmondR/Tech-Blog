@@ -1,0 +1,26 @@
+.btn-no-style {
+  font-family: serif;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color 0.1s;
+    margin-left: 16px;
+  }
+
+  nav a {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color 0.1s;
+    margin-left: 16px;
+  }
