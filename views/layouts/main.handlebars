@@ -14,9 +14,13 @@
             <nav>
                 <a href="/">Home</a>
                 <a href="/">Dashboard</a>
-                <a href="/login">Login</a>
+
+                {{!-- conditionally render login logout buttons --}}
+                {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">Logout</button>
-                {{!-- <a href="/">Logout</a> --}}
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
             </nav>
             <h1>
                 <a href="/">The Tech Blog</a>
@@ -26,7 +30,11 @@
             {{{ body }}}
         </main>
     </div>
+
+    {{!-- conditionally render logout script --}}
+    {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
