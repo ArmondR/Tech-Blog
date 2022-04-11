@@ -4,6 +4,10 @@
 
 This is a blog application. This application allows the user to create their own account, view created update and delete their posts as well as leave comments on others posts.
 
+## Future Development
+
+For future development I will be adding styling to the website and completing edit and add post functionality.
+
 ## Usage
 
 The application is deployed and can be accessed via heroku link provided or if you installed application it can be accessed through your localhost network once app is initiated.
